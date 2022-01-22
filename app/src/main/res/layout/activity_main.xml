@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/stepsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="@string/steps"/>
+
+    <TextView
+        android:id="@+id/step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/stepsTV"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="0"/>
+
+    <TextView
+        android:id="@+id/timerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/stepsTV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:text="@string/timer"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/stepsTV"
+        app:layout_constraintLeft_toRightOf="@id/timerTV"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:text="60"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/timerTV"
+        >
+
+        <TableRow
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="1"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="2"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button3"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="3"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button4"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="4"
+                android:textSize="30sp"/>
+
+        </TableRow>
+
+        <TableRow
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button5"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="5"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button6"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="6"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button7"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="7"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button8"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="8"
+                android:textSize="30sp"/>
+
+        </TableRow>
+
+        <TableRow
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button9"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="9"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button10"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="10"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button11"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="11"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button12"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="12"
+                android:textSize="30sp"/>
+
+        </TableRow>
+
+        <TableRow
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button13"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="13"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button14"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="14"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button15"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text="15"
+                android:textSize="30sp"/>
+
+            <Button
+                android:id="@+id/button16"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@mipmap/ic_launcher"
+                android:onClick="onClick"
+                android:text=""
+                android:textSize="30sp"
+                android:visibility="invisible"
+                android:enabled="false"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonBarButtonStyle"
+        app:layout_constraintTop_toBottomOf="@id/tableLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/shuffle"
+        android:onClick="shuffle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
